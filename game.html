@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pierre - Papier - Ciseaux</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div class="app">
+  <h1>🎮 Pierre <span>Papier</span> Ciseaux</h1>
+  <p class="subtitle">Choisissez votre coup pour affronter l'ordinateur</p>
+
+  <div class="score-board">
+    <div class="score-item you">
+      <div class="label">VOUS</div>
+      <div class="value" id="scoreYou">0</div>
+    </div>
+    <div class="score-item pc">
+      <div class="label">ORDINATEUR</div>
+      <div class="value" id="scorePc">0</div>
+    </div>
+  </div>
+
+  <div class="arena">
+    <div class="slot" id="youSlot">❓</div>
+    <div class="vs">VS</div>
+    <div class="slot" id="pcSlot">❓</div>
+  </div>
+
+  <div class="result" id="resultText"></div>
+
+  <div class="choices">
+    <button class="choice-btn" onclick="play('Pierre')">
+      <span class="emoji">✊</span> Pierre
+    </button>
+    <button class="choice-btn" onclick="play('Papier')">
+      <span class="emoji">✋</span> Papier
+    </button>
+    <button class="choice-btn" onclick="play('Ciseaux')">
+      <span class="emoji">✌️</span> Ciseaux
+    </button>
+  </div>
+
+  <div class="controls">
+    <button onclick="resetScore()">↺ Réinitialiser le score</button>
+  </div>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
