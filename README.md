@@ -4,7 +4,7 @@ A Rock-Paper-Scissors game built with HTML, CSS, and JavaScript. Live project: h
 
 ## My Role
 
-- Frontend development
+- Frontend development (HTML, CSS, JavaScript )
 - Game logic and styling
 
 ## Description
